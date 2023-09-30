@@ -1,13 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import { Notification } from "./components/Notification";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
-    </>
+    <section className="h-full w-full flex justify-center items-center flex-col">
+      <h1 className="text-3xl font-bold underline text-center">
+        Learning Tailwind
+      </h1>
+      <div className="w-4/5 p-8 bg-slate-900">
+        <Notification />
+      </div>
+    </section>
   );
 }
 
