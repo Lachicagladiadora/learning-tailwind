@@ -1,4 +1,6 @@
 import "./App.css";
+import { ButtonActive } from "./components/ButtonActive";
+import { ButtonPrimary } from "./components/ButtonPrimary";
 import { Notification } from "./components/Notification";
 import { Profile } from "./components/Profile";
 
@@ -11,6 +13,8 @@ function App() {
       <div className="w-4/5 p-8 bg-slate-900">
         <Notification />
         <Profile />
+        <ButtonPrimary />
+        <ButtonActive />
       </div>
     </section>
   );
