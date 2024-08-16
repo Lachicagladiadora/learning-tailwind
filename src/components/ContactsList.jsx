@@ -1,15 +1,4 @@
-//make a array with contacts data
-
-
-
-
-
-// const Contact = (imgSrc, name, email) => {
-//   return (
-//     <>
-
-//     </>)
-// }
+//make manual the render data
 
 export const ContactsList = (contactsData) => {
   console.log({ contactsData })
