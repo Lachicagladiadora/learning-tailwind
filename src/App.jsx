@@ -38,7 +38,7 @@ function App() {
       </h1>
       <h2 className="text-cyan-400 text-xl">Utility-First Fundamentals</h2>
       <div className="w-4/5 p-8">
-        {/* <Notification /> */}
+        <Notification />
         <Profile />
       </div>
       <h2 className="text-cyan-400 text-xl">Handling Hover, Focus, and Other States</h2>

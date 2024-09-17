@@ -4,7 +4,12 @@ export const Notification = () => {
   return (
     <div className="py-5">
       <div className="bg-gray-50 max-w-sm mx-auto flex items-center rounded-lg p-6 shadow-lg">
-        <div className="w-12 h-12 flex-shrink-2 shadow-sm">
+        <div className="w-12 h-12 flex-shrink-2 shadow-sm bg-[url('/bubble.svg')] bg-cover">
+          {/* <img src="/bubble.svg" alt="" /> */}
+          {/* <object type="image/svg+xml" data="/bubble.svg" width="40" height="40"> */}
+          {/* Icono SVG */}
+          {/* </object> */}
+
           {/* <Bubble /> */}
         </div>
         <div className="ml-6 pt-1">
