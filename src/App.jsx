@@ -1,12 +1,12 @@
 import "./App.css";
-import { ButtonActive } from "./components/ButtonActive";
-import { ButtonPrimary } from "./components/ButtonPrimary";
-import { ContactsList } from "./components/ContactsList";
 import { Notification } from "./components/Notification";
 import { Profile } from "./components/Profile";
+import { ButtonPrimary } from "./components/ButtonPrimary";
+import { ButtonActive } from "./components/ButtonActive";
+import { ContactsList } from "./components/ContactsList";
 
 
-const contactsData = [
+const contactsListData = [
   {
     imgSrc: "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     name: "Kristen Ramos",
@@ -42,10 +42,10 @@ function App() {
         <Profile />
       </div>
       <h2 className="text-cyan-400 text-xl">Handling Hover, Focus, and Other States</h2>
-      <div>
+      <div className="w-4/5 p-8">
         <ButtonPrimary />
         <ButtonActive />
-        {/* <ContactsList contactsData={contactsData} /> */}
+        <ContactsList contactsData={contactsListData} />
       </div>
     </div>
   );
