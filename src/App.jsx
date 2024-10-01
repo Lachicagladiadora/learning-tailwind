@@ -4,6 +4,7 @@ import { Profile } from "./components/Profile";
 import { ButtonPrimary } from "./components/ButtonPrimary";
 import { ButtonActive } from "./components/ButtonActive";
 import { ContactsList } from "./components/ContactsList";
+import { PeopleTable } from "./components/PeopleTable";
 
 
 const contactsListData = [
@@ -29,6 +30,34 @@ const contactsListData = [
   }
 ]
 
+const peopleListData = [
+  {
+    name: "Jane Cooper",
+    title: "Regional Paradigm Technician",
+    email: "jane.cooper@example.com"
+  },
+  {
+    name: "Cody Fisher",
+    title: "Product Directives Officer",
+    email: "cody.fisher@example.com "
+  },
+  {
+    name: "Leonard Krasner",
+    title: "Senior Designer",
+    email: "leonard.krasner@example.com "
+  },
+  {
+    name: "Emily Selman",
+    title: "VP, Hardware Engineering",
+    email: "emily.selman@example.com "
+  },
+  {
+    name: "Anna Roberts",
+    title: "Chief Strategy Officer",
+    email: "anna.roberts@example.com "
+  },
+]
+
 function App() {
 
   return (
@@ -46,6 +75,7 @@ function App() {
         <ButtonPrimary />
         <ButtonActive />
         <ContactsList contactsData={contactsListData} />
+        <PeopleTable peopleList={peopleListData} />
       </div>
     </div>
   );
