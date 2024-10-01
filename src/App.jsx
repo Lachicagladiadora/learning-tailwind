@@ -5,6 +5,7 @@ import { ButtonPrimary } from "./components/ButtonPrimary";
 import { ButtonActive } from "./components/ButtonActive";
 import { ContactsList } from "./components/ContactsList";
 import { PeopleTable } from "./components/PeopleTable";
+import { Form } from "./components/Form";
 
 
 const contactsListData = [
@@ -78,6 +79,7 @@ function App() {
         </div>
         <ContactsList contactsData={contactsListData} />
         <PeopleTable peopleList={peopleListData} />
+        <Form />
       </div>
     </div>
   );
