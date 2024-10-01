@@ -61,19 +61,21 @@ const peopleListData = [
 function App() {
 
   return (
-    <div className="h-full w-full flex gap-5 justify-center items-center flex-col">
+    <div className="flex gap-5 justify-center items-center flex-col">
       <h1 className="text-white text-3xl font-bold text-center">
         Learning tailwind
       </h1>
       <h2 className="text-cyan-400 text-xl">Utility-First Fundamentals</h2>
-      <div className="w-4/5 p-8">
+      <div className="flex gap-20 items-center justify-center">
         <Notification />
         <Profile />
       </div>
       <h2 className="text-cyan-400 text-xl">Handling Hover, Focus, and Other States</h2>
-      <div className="w-4/5 p-8">
-        <ButtonPrimary />
-        <ButtonActive />
+      <div className="flex flex-col items-center justify-center gap-10">
+        <div className="flex items-center justify-center gap-10">
+          <ButtonPrimary />
+          <ButtonActive />
+        </div>
         <ContactsList contactsData={contactsListData} />
         <PeopleTable peopleList={peopleListData} />
       </div>

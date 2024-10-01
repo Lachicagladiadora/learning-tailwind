@@ -1,8 +1,8 @@
 export const Profile = () => {
   return (
     <div className="py-5">
-      <div className="bg-white max-w-sm p-4 mx-auto  rounded-lg flex items-center ">
-        <div className="px-4">
+      <div className="bg-white w-[385px] h-[131px] rounded-lg flex items-center gap-8">
+        <div className="ps-8">
           <img
             src="https://tailwindcss.com/img/erin-lindford.jpg"
             alt=""
