@@ -1,9 +1,11 @@
 //make manual the render data
 
 
+// eslint-disable-next-line react/prop-types
 export const ContactsList = ({ contactsData }) => {
   return (
     <ul className="h-auto w-[500px] p-5 bg-neutral-50 text-neutral-800 mx-auto">
+      {/* eslint-disable-next-line react/prop-types */}
       {contactsData.length > 0 && contactsData.map((cur, idx) => (
         <li key={idx} className="flex gap-3 text-md font-light border-b border-b-neutral-300 last:border-b-0">
           <div className="p-3 pr-0 flex items-center justify-center">

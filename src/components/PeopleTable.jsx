@@ -1,6 +1,7 @@
+
+// eslint-disable-next-line react/prop-types
 export const PeopleTable = ({ peopleList }) => {
   return (
-    // <div className="py-4 flex">
     <table className="mx-auto font-medium">
       <thead className="p-2 bg-zinc-50 border-b border-b-slate-800/10">
         <tr>
@@ -10,6 +11,7 @@ export const PeopleTable = ({ peopleList }) => {
         </tr>
       </thead>
       <tbody>
+        {/* eslint-disable-next-line react/prop-types */}
         {peopleList.map((c, i) => (
           <tr className='p-2 odd:bg-zinc-50 even:bg-zinc-100' key={i}>
             <td className="p-4 text-justify  text-black">{c.name}</td>
@@ -19,6 +21,5 @@ export const PeopleTable = ({ peopleList }) => {
         ))}
       </tbody>
     </table>
-    // </div>
   )
 }
