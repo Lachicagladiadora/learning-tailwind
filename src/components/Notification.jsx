@@ -1,16 +1,11 @@
-// import Bubble from "./Icons/Bubble";
+import bubble from "../assets/Icons/bubble.svg";
 
 export const Notification = () => {
   return (
     <div className="py-5">
       <div className="bg-gray-50 max-w-sm mx-auto flex items-center rounded-lg p-6 shadow-lg">
         <div className="w-12 h-12 flex-shrink-2 shadow-sm bg-cover">
-          <img src="./Icons/bubble.svg" alt="" />
-          {/* <object type="image/svg+xml" data="/bubble.svg" width="40" height="40"> */}
-          {/* Icono SVG */}
-          {/* </object> */}
-
-          {/* <Bubble /> */}
+          <img src={bubble} alt="" />
         </div>
         <div className="ml-6 pt-1">
           <p className="text-xl leading-5 text-black">ChitChat</p>
