@@ -7,6 +7,7 @@ import { ContactsList } from "./components/ContactsList";
 import { PeopleTable } from "./components/PeopleTable";
 import { Form } from "./components/Form";
 import { NewProject } from "./components/NewProject";
+import { ContactsWithOptions } from "./components/ContactsWithOptions";
 
 
 const contactsListData = [
@@ -60,6 +61,24 @@ const peopleListData = [
   },
 ]
 
+const contactsData = [
+  {
+    src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Leslie Abbott",
+    title: "Co-Founder / CEO"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Hector Adams",
+    title: "VP, Marketing"
+  },
+  {
+    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Blake Alexander",
+    title: "Account Coordinator"
+  }
+]
+
 function App() {
 
   return (
@@ -82,7 +101,7 @@ function App() {
         <PeopleTable peopleList={peopleListData} />
         <Form />
         <NewProject />
-
+        <ContactsWithOptions contactsData={contactsData} />
       </div>
     </div>
   );
