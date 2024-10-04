@@ -1,5 +1,5 @@
-export const EMAIL_REGEX_VALIDATE = /^ [a - zA - Z0 -9._ % +-] + @[a - zA - Z0 - 9. -] +\.[a - zA - Z]{ 2, } $/
 
+export const EMAIL_REGEX_VALIDATE = /^ [a - zA - Z0 -9._ % +-] + @[a - zA - Z0 - 9. -] +\.[a - zA - Z]{ 2, } $/
 
 export const CONTACTS_LIST_DATA = [
   {
@@ -69,3 +69,18 @@ export const CONTACTS_DATA = [
     title: "Account Coordinator"
   }
 ]
+
+export const CATEGORIES_DATA = [
+  "Sales",
+  "Marketing",
+  "SEO",
+  "Analytics",
+  "Design",
+  "Strategy",
+  "Security",
+  "Growth",
+  "Mobile",
+  "UX / UI",
+]
+
+

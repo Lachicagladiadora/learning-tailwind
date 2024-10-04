@@ -9,8 +9,9 @@ import { Form } from "./components/Form";
 import { NewProject } from "./components/NewProject";
 import { ContactsWithOptions } from "./components/ContactsWithOptions";
 import { InputWithErrorMessage } from "./components/InputWithErrorMessage";
-import { CONTACTS_DATA, CONTACTS_LIST_DATA, PEOPLE_LIST_DATA } from "./constants";
+import { CATEGORIES_DATA, CONTACTS_DATA, CONTACTS_LIST_DATA, PEOPLE_LIST_DATA } from "./constants";
 import { PublishedStatus } from "./components/PublishedStatus";
+import { Categories } from "./components/Categories";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <ContactsWithOptions contactsData={CONTACTS_DATA} />
         <InputWithErrorMessage />
         <PublishedStatus />
+        <Categories categories={CATEGORIES_DATA} />
       </div>
     </div>
   );
