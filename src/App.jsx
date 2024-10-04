@@ -10,6 +10,7 @@ import { NewProject } from "./components/NewProject";
 import { ContactsWithOptions } from "./components/ContactsWithOptions";
 import { InputWithErrorMessage } from "./components/InputWithErrorMessage";
 import { CONTACTS_DATA, CONTACTS_LIST_DATA, PEOPLE_LIST_DATA } from "./constants";
+import { PublishedStatus } from "./components/PublishedStatus";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <NewProject />
         <ContactsWithOptions contactsData={CONTACTS_DATA} />
         <InputWithErrorMessage />
+        <PublishedStatus />
       </div>
     </div>
   );
