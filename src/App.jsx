@@ -8,6 +8,7 @@ import { PeopleTable } from "./components/PeopleTable";
 import { Form } from "./components/Form";
 import { NewProject } from "./components/NewProject";
 import { ContactsWithOptions } from "./components/ContactsWithOptions";
+import { InputWithErrorMessage } from "./components/InputWithErrorMessage";
 
 
 const contactsListData = [
@@ -102,6 +103,7 @@ function App() {
         <Form />
         <NewProject />
         <ContactsWithOptions contactsData={contactsData} />
+        <InputWithErrorMessage />
       </div>
     </div>
   );
