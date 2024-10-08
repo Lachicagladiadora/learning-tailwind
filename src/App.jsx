@@ -12,6 +12,7 @@ import { InputWithErrorMessage } from "./components/InputWithErrorMessage";
 import { CATEGORIES_DATA, CONTACTS_DATA, CONTACTS_LIST_DATA, PEOPLE_LIST_DATA } from "./constants";
 import { PublishedStatus } from "./components/PublishedStatus";
 import { Categories } from "./components/Categories";
+import { PaymentMethod } from "./components/PaymentMethod";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
         <InputWithErrorMessage />
         <PublishedStatus />
         <Categories categories={CATEGORIES_DATA} />
+        <PaymentMethod />
       </div>
     </div>
   );
