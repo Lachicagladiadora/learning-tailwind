@@ -18,4 +18,7 @@ This repository provides different exercise for learn tailwind from official doc
    ![result](/src/assets/img-button-focus-1.png)
    ![result](/src/assets/img-button-focus-2.png)
 
+5. Contact list: first & last
+   ![result](/src/assets/img-contact-list-first-last.png)
+
 ## Handling Hover, Focus, and Other States
