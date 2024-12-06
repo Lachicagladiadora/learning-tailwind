@@ -41,6 +41,8 @@ function App() {
         <PublishedStatus />
         <Categories categories={CATEGORIES_DATA} />
         <PaymentMethod />
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
