@@ -38,23 +38,20 @@ export const PaymentMethod = () => {
     <div className="w-[480px] bg-white rounded-md p-5">
       <h3 className="text-gray-200 font-bold">PaymentMethod</h3>
       <div>
-        {PayMethod.map(c => (<div className="flex items-center justify-between p-5 rounded-xl border border-white checked:border-violet-300 checked:bg-violet-300 hover:border-gray-50 hover:bg-gray-50 group">
+        {PayMethod.map(c => (
           <label
-            htmlFor={c.label}
-            className="flex items-center justify-center gap-3"
+            key={c.label} className="flex items-center justify-between gap-3 p-5 rounded-xl border border-white checked:border-violet-300 checked:bg-violet-300 hover:border-gray-100 hover:bg-gray-100 group"
           >
             <div className="h-8 w-8 flex items-center justify-center">
               {c.img}
             </div>
             {c.name}
-          </label>
-          <input
-            type="radio"
-            name={c.label}
-            id={c.label}
-            className="checked:border-indigo-500"
-          />
-        </div>))}
+            <input
+              type="radio"
+              name={c.label}
+              className="checked:border-indigo-500"
+            />
+          </label>))}
       </div>
     </div>
   );
