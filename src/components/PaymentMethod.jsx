@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const PayMethod = [{
   name: 'Google Pay',
   img: <svg fill="currentColor" viewBox="0 0 24 13">
@@ -33,6 +35,7 @@ const PayMethod = [{
 }]
 
 export const PaymentMethod = () => {
+  const [currentPay, setCurrentPay] = useState('google')
 
   return (
     <div className="w-[480px] bg-white rounded-md p-5">
@@ -40,7 +43,8 @@ export const PaymentMethod = () => {
       <div>
         {PayMethod.map(c => (
           <label
-            key={c.label} className="flex items-center justify-between gap-3 p-5 rounded-xl border border-white checked:border-violet-300 checked:bg-violet-300 hover:border-gray-100 hover:bg-gray-100 group"
+            key={c.label} className={`flex items-center justify-between gap-3 px-5 py-4 rounded-xl border-2 border-white has-[:checked]:border-violet-500 has-[:checked]:bg-violet-500 hover:border-gray-100 hover:bg-gray-100 group `}
+            onClick={() => setCurrentPay(c.label)}
           >
             <div className="h-8 w-8 flex items-center justify-center">
               {c.img}
@@ -49,6 +53,7 @@ export const PaymentMethod = () => {
             <input
               type="radio"
               name={c.label}
+              checked={currentPay === c.label}
               className="checked:border-indigo-500"
             />
           </label>))}
