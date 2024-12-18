@@ -43,7 +43,7 @@ export const PaymentMethod = () => {
       <div>
         {PayMethod.map(c => (
           <label
-            key={c.label} className={`flex items-center justify-between gap-3 px-5 py-4 rounded-xl border-2 border-white has-[:checked]:border-violet-500 has-[:checked]:bg-violet-500 hover:border-gray-100 hover:bg-gray-100 group `}
+            key={c.label} className={`flex items-center justify-between gap-3 px-5 py-4 rounded-xl border-2 border-white hover:border-gray-100 hover:bg-gray-100 group has-[:checked]:bg-indigo-500`}
             onClick={() => setCurrentPay(c.label)}
           >
             <div className="h-8 w-8 flex items-center justify-center">

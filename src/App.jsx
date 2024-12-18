@@ -40,9 +40,8 @@ function App() {
         <InputWithErrorMessage />
         <PublishedStatus />
         <Categories categories={CATEGORIES_DATA} />
+        {/* has-[:checked]: */}
         <PaymentMethod />
-        <div></div>
-        <div></div>
       </div>
     </div>
   );
